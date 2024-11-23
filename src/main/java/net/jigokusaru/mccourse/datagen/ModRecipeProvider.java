@@ -11,6 +11,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.StairBlock;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -41,6 +43,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput,BLACK_OPAL_SMELTABLE,RecipeCategory.MISC,ModItems.BLACK_OPAL.get(), 0.25f,200,"black_opal");
         oreBlasting(recipeOutput,BLACK_OPAL_SMELTABLE,RecipeCategory.MISC,ModItems.BLACK_OPAL.get(), 0.25f,100,"black_opal");
+
+
+        slab(recipeOutput,RecipeCategory.BUILDING_BLOCKS,ModBlocks.BLACK_OPAL_SLAB.get(),ModBlocks.BLACK_OPAL_BLOCK.get());
+        stairBuilder(ModBlocks.BLACK_OPAL_STAIRS.get(),Ingredient.of(ModBlocks.BLACK_OPAL_BLOCK.get())).group("black_opal")
+                .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.BLACK_OPAL_PRESSURE_PLATE.get(), ModBlocks.BLACK_OPAL_BLOCK.get());
+        buttonBuilder(ModBlocks.BLACK_OPAL_BUTTON.get(),Ingredient.of(ModBlocks.BLACK_OPAL_BLOCK)).group("black_opal")
+                .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(recipeOutput);;
+
+
+
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory recipeCategory, ItemLike result,

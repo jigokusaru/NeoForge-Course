@@ -12,6 +12,10 @@
   "block.mccourse.black_opal_nether_ore": "Black Opal Nether Ore",
   "block.mccourse.black_opal_end_ore": "Black Opal End Ore",
   "block.mccourse.magic_block": "Magic Block",
+  "block.mccourse.black_opal_stairs": "Black Opal Stairs",
+  "block.mccourse.black_opal_slab": "Black Opal Slab",
+  "block.mccourse.black_opal_button": "Black Opal Button",
+  "block.mccourse.black_opal_pressure_plate": "Black Opal Pressure Plate",
 
   "itemGroup.mccourse.mccourse_items_tab": "MC Course Items",
   "itemGroup.mccourse.mccourse_blocks_tab": "MC Course Blocks",
