@@ -1,3 +1,7 @@
-// 1.21.1	2024-11-22T12:32:06.2282403	Tags for minecraft:block mod id mccourse
-fafe12cecdda77e6cff2267704cbc30058f4cc37 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2024-11-23T13:26:53.3216558	Tags for minecraft:block mod id mccourse
+64ba52a0503fe733de3f3907b7f157cb0821a8e3 data/mccourse/tags/block/mineable/paxel.json
+be3bcc39d2217b79e45cb9fd308c546e01202985 data/minecraft/tags/block/fences.json
+30f01eee2bc7837ca3d813ca22d93f0d17a915e5 data/minecraft/tags/block/fence_gates.json
+1a1d8000804262049b37d0478354539f31b82c5e data/minecraft/tags/block/mineable/pickaxe.json
 a327827304b746a86d4b35b759c58eee9e1b7298 data/minecraft/tags/block/needs_iron_tool.json
+e53c27aa0b2c439eb0eba28463fe020d91aa9b5c data/minecraft/tags/block/walls.json

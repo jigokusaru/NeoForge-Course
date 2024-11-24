@@ -1,6 +1,15 @@
-// 1.21.1	2024-11-22T18:16:01.7186364	Item Models: mccourse
+// 1.21.1	2024-11-23T13:26:53.3246555	Item Models: mccourse
 e7ef334bfa102c4182125d1cdb301d3f9b907c71 assets/mccourse/models/item/black_opal.json
+0d5b2081db8f2f542cb2c52c213edd66470367e2 assets/mccourse/models/item/black_opal_axe.json
 fed469c3177ddf19c4600a22fcabcd8924c5058f assets/mccourse/models/item/black_opal_button.json
+66d4ccdc92594f9e2553e9e7f1365ecd46f3472a assets/mccourse/models/item/black_opal_door.json
+4048a762b10150ad96cdcf4e90e1552fa993b144 assets/mccourse/models/item/black_opal_fence.json
+efd51f12fc41e90e8dce3284887551dd4bdd3edf assets/mccourse/models/item/black_opal_hoe.json
+c65a397058787c8f1fef921b1c4a4bc2eea2e54d assets/mccourse/models/item/black_opal_paxel.json
+27d445aed0efd73b51c3241d60aa0e53aa94cf65 assets/mccourse/models/item/black_opal_pickaxe.json
+5f3dc1d76280507440c25d240708df4b70c8577b assets/mccourse/models/item/black_opal_shovel.json
+cfeeb5647e5124fb2c5ba7326f98257c64ffbac5 assets/mccourse/models/item/black_opal_sword.json
+1080e4361cb6d4a62eb4e7d84d60c36674b2088c assets/mccourse/models/item/black_opal_wall.json
 f2aeca2040ea829b8b6878ebe3a168fcb74381d2 assets/mccourse/models/item/chainsaw.json
 6afbdf99b8d547315cc99a00aa4711f3da4f09e8 assets/mccourse/models/item/frostfire_ice.json
 2739c156a9808c5d87bcde141a758eb6a35f85b5 assets/mccourse/models/item/raw_black_opal.json

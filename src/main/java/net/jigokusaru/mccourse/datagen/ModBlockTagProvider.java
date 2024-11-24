@@ -2,9 +2,11 @@ package net.jigokusaru.mccourse.datagen;
 
 import net.jigokusaru.mccourse.MCCourseMod;
 import net.jigokusaru.mccourse.block.ModBlocks;
+import net.jigokusaru.mccourse.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.datafix.fixes.BlockEntityKeepPacked;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -39,6 +41,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_OPAL_NETHER_ORE.get())
                 .add(ModBlocks.BLACK_OPAL_END_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.BLACK_OPAL_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.BLACK_OPAL_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.BLACK_OPAL_WALL.get());
+
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .addTag(BlockTags.MINEABLE_WITH_AXE);
 
 
     }

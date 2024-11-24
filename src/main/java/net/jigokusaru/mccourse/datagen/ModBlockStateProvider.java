@@ -4,6 +4,7 @@ import net.jigokusaru.mccourse.MCCourseMod;
 import net.jigokusaru.mccourse.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -34,13 +35,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BLACK_OPAL_SLAB);
         blockItem(ModBlocks.BLACK_OPAL_PRESSURE_PLATE);
 
+        fenceBlock(((FenceBlock) ModBlocks.BLACK_OPAL_FENCE.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.BLACK_OPAL_FENCE_GATE.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.BLACK_OPAL_WALL.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+
+        blockItem((ModBlocks.BLACK_OPAL_FENCE_GATE));
+
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.BLACK_OPAL_DOOR.get()), modLoc("block/black_opal_door_bottom")
+                , modLoc("block/black_opal_door_top"), "cuttout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.BLACK_OPAL_TRAPDOOR.get()), modLoc("block/black_opal_trapdoor"), true,"cuttout");
+
+        blockItem(ModBlocks.BLACK_OPAL_TRAPDOOR, "_bottom");
+
     }
 
     private void blockWithItem(DeferredBlock<Block> deferredBlock){
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 
-    private void blockItem(DeferredBlock<Block> deferredBlock){
-        simpleBlockItem(deferredBlock.get(),new ModelFile.UncheckedModelFile("mccourse:block/"+ deferredBlock.getId().getPath()));
+    private void blockItem(DeferredBlock<Block> deferredBlock) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("mccourse:block/" + deferredBlock.getId().getPath()));
+    }
+    private void blockItem(DeferredBlock<Block> deferredBlock, String appendix){
+        simpleBlockItem(deferredBlock.get(),new ModelFile.UncheckedModelFile("mccourse:block/"+ deferredBlock.getId().getPath() + appendix));
     }
 }

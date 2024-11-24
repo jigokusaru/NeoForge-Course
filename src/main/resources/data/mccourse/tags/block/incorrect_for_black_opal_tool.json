@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ],
+  "remove": [
+    "#mccourse:needs_black_opal_tool"
+  ]
+
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "mccourse:black_opal_pickaxe"
+    },
+    "B": {
+      "item": "mccourse:black_opal_axe"
+    },
+    "C": {
+      "item": "mccourse:black_opal_shovel"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mccourse:black_opal_paxel"
+  }
+}

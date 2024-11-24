@@ -27,6 +27,13 @@ public class ModCreativeTabs {
                         output.accept(ModItems.CHAINSAW);
                         output.accept(ModItems.TOMATO);
                         output.accept(ModItems.FROSTFIRE_ICE);
+                        output.accept(ModItems.BLACK_OPAL_SWORD);
+                        output.accept(ModItems.BLACK_OPAL_PICKAXE);
+                        output.accept(ModItems.BLACK_OPAL_SHOVEL);
+                        output.accept(ModItems.BLACK_OPAL_AXE);
+                        output.accept(ModItems.BLACK_OPAL_HOE);
+                        output.accept(ModItems.BLACK_OPAL_PAXEL);
+                        output.accept(ModItems.BLACK_OPAL_HAMMER);
                     })
                     .build());
 
@@ -47,6 +54,11 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.BLACK_OPAL_SLAB);
                         output.accept(ModBlocks.BLACK_OPAL_PRESSURE_PLATE);
                         output.accept(ModBlocks.BLACK_OPAL_BUTTON);
+                        output.accept(ModBlocks.BLACK_OPAL_FENCE_GATE);
+                        output.accept(ModBlocks.BLACK_OPAL_FENCE);
+                        output.accept(ModBlocks.BLACK_OPAL_WALL);
+                        output.accept(ModBlocks.BLACK_OPAL_DOOR);
+                        output.accept(ModBlocks.BLACK_OPAL_TRAPDOOR);
 
                     })
                     .build());
